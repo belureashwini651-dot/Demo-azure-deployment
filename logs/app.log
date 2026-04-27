@@ -320,3 +320,34 @@ Caused by: java.lang.IllegalStateException: Could not self-attach to current VM 
 2026-04-27T22:55:47.247+05:30  INFO 20080 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-04-27T22:55:47.254+05:30  INFO 20080 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-04-27T22:55:47.257+05:30  INFO 20080 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-27T22:56:05.869+05:30  INFO 20344 --- [demo] [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.9 with PID 20344 (C:\Users\ashvinib\Downloads\demo\target\classes started by ashvinib in C:\Users\ashvinib\Downloads\demo)
+2026-04-27T22:56:05.877+05:30  INFO 20344 --- [demo] [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-04-27T22:56:08.437+05:30  INFO 20344 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-27T22:56:08.552+05:30  INFO 20344 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interface.
+2026-04-27T22:56:10.162+05:30  INFO 20344 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-27T22:56:10.213+05:30  INFO 20344 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-27T22:56:10.213+05:30  INFO 20344 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-04-27T22:56:10.441+05:30  INFO 20344 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-27T22:56:10.444+05:30  INFO 20344 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4417 ms
+2026-04-27T22:56:12.017+05:30  INFO 20344 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-27T22:56:12.304+05:30  INFO 20344 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-04-27T22:56:12.465+05:30  INFO 20344 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-27T22:56:14.028+05:30  INFO 20344 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-27T22:56:14.140+05:30  INFO 20344 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-27T22:56:14.756+05:30  INFO 20344 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-04-27T22:56:14.760+05:30  INFO 20344 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-27T22:56:14.911+05:30  INFO 20344 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-27T22:56:16.719+05:30  INFO 20344 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-27T22:56:16.827+05:30  INFO 20344 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-27T22:56:18.001+05:30  WARN 20344 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-27T22:56:20.188+05:30  INFO 20344 --- [demo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-04-27T22:56:20.327+05:30  INFO 20344 --- [demo] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-04-27T22:56:20.795+05:30  INFO 20344 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-27T22:56:20.839+05:30  INFO 20344 --- [demo] [main] com.example.demo.DemoApplication         : Started DemoApplication in 15.914 seconds (process running for 27.034)
